@@ -38,4 +38,9 @@ public class MusicData implements DataInfo{
     public String getSendSQLString() {
         return null;
     }
+
+    @Override
+    public void showData() {
+
+    }
 }

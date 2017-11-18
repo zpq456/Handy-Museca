@@ -9,6 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+
+import kr.ac.zipokun.handymuseca.Data.GraficaData;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -17,6 +21,8 @@ public class GraficaFragment extends Fragment
     implements MainActivity.onKeyBackPressedListener{
     private static GraficaFragment uniqueInstance;
     private MainActivity main;
+
+    private ArrayList<GraficaData> graficaListDatas = null;
 
     GraficaFragment() {}
 

@@ -11,6 +11,5 @@ public interface DataInfo {
     public void setData(String[] uData);
 
     public String getSendSQLString();
-
-    void showData();
+    public void showData();
 }

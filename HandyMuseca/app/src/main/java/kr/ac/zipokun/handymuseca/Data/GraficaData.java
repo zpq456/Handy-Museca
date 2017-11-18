@@ -7,6 +7,7 @@ import android.util.Log;
  */
 
 public class GraficaData implements DataInfo{
+
     //grafica_list Table itme
     public static final String TABLE_GRAFICALIST = "grafica_list";
     public static final String GRAFICALIST_ID = "_id";
@@ -91,4 +92,5 @@ public class GraficaData implements DataInfo{
         Log.d("GraficaData_caption1",uData[13]);
         Log.d("GraficaData_caption2",uData[14]);
     }
+
 }

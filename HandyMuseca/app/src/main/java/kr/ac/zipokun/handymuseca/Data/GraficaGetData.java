@@ -4,19 +4,22 @@ package kr.ac.zipokun.handymuseca.Data;
  * Created by Owner on 2017-11-25.
  */
 
-public class MusicData implements DataInfo{
-    public static final String TABLE_GRAFICALIST = "music_list";
+public class GraficaGetData implements DataInfo {
+    public static final String TABLE_GRAFICALIST = "grafica_get_list";
 
-    private String[] uData = new String[5];
+    private String[] uData = new String[7];
 
-    public MusicData(){}
-    public MusicData(String id, String level, String level_num,
-                          String info, String note){
+    public GraficaGetData(){}
+    public GraficaGetData(String id, String getway, String music_easy,
+                       String music_nomal, String music_hard,
+                       String num_nomal, String num_hard){
         setData(0,id);
-        setData(1,level);
-        setData(2,level_num);
-        setData(3,info);
-        setData(4,note);
+        setData(1,getway);
+        setData(2,music_easy);
+        setData(3,music_nomal);
+        setData(4,music_hard);
+        setData(5,num_nomal);
+        setData(6,num_hard);
     }
 
     @Override
@@ -42,6 +45,5 @@ public class MusicData implements DataInfo{
     }
     @Override
     public void showData() {
-
     }
 }

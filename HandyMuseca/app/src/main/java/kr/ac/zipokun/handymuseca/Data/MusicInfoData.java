@@ -1,22 +1,21 @@
 package kr.ac.zipokun.handymuseca.Data;
 
 /**
- * Created by Owner on 2017-11-25.
+ * Created by Owner on 2017-07-15.
  */
 
-public class MusicData implements DataInfo{
-    public static final String TABLE_GRAFICALIST = "music_list";
+public class MusicInfoData implements DataInfo{
+    public static final String TABLE_GRAFICALIST = "music_info_list";
 
-    private String[] uData = new String[5];
+    private String[] uData = new String[4];
 
-    public MusicData(){}
-    public MusicData(String id, String level, String level_num,
-                          String info, String note){
-        setData(0,id);
-        setData(1,level);
-        setData(2,level_num);
-        setData(3,info);
-        setData(4,note);
+    public MusicInfoData(){}
+    public MusicInfoData(String Mid, String name, String released,
+                         String produce){
+        setData(0,Mid);
+        setData(1,name);
+        setData(2,released);
+        setData(3,produce);
     }
 
     @Override
@@ -40,8 +39,11 @@ public class MusicData implements DataInfo{
     public String getSendSQLString() {
         return null;
     }
+
     @Override
     public void showData() {
 
     }
+
+
 }

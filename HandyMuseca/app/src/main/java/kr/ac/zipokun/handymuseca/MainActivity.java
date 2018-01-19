@@ -20,8 +20,8 @@ import kr.ac.zipokun.handymuseca.DataBase.DBHelper;
 public class MainActivity extends AppCompatActivity {
 
     public static final String PACKAGE_DIR = "/data/data/kr.ac.zipokun.handymuseca/";
-    public static final String DATABASE_NAME = "handymuseca.db";
-    public static final String COPY2DATABASE_NAME = "handymuseca2.db";
+    public static final String DATABASE_NAME = "test.db";
+    public static final String COPY2DATABASE_NAME = "test2.db";
     public static final int DATABASE_VERSION = 1;
     public static final String UPDATE_DB_NAME = "handymuseca"+Integer.toString(DATABASE_VERSION)+".db";
 

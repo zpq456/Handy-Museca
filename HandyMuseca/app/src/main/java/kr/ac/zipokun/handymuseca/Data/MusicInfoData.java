@@ -7,15 +7,16 @@ package kr.ac.zipokun.handymuseca.Data;
 public class MusicInfoData implements DataInfo{
     public static final String TABLE_GRAFICALIST = "music_info_list";
 
-    private String[] uData = new String[4];
+    private String[] uData = new String[5];
 
     public MusicInfoData(){}
-    public MusicInfoData(String Mid, String name, String released,
-                         String produce){
-        setData(0,Mid);
+    public MusicInfoData(String musicID, String name, String released,
+                         String produce, String howtoget){
+        setData(0,musicID);
         setData(1,name);
         setData(2,released);
         setData(3,produce);
+        setData(4,howtoget);
     }
 
     @Override

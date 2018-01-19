@@ -110,7 +110,8 @@ public class DBHelper{
         while (cursor.moveToNext()) {//커서가 계속해서 이동하면서 데이터를 가져옴
             MusicInfoData data = new MusicInfoData(
                     cursor.getString(0), cursor.getString(1),
-                    cursor.getString(2), cursor.getString(3)
+                    cursor.getString(2), cursor.getString(3),
+                    cursor.getString(4)
             );
             if (data != null) {
                 Datas.add(data);
